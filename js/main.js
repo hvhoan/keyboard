@@ -1,6 +1,6 @@
 $(function() {
-  $('.card-number').on('focus', function() {
+//   $('.card-number').on('focus', function() {
 //     $(this).trigger('blur');
-    console.log('Hi');
-  })
+//     console.log('Hi');
+//   })
 });
