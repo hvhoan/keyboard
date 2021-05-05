@@ -6,4 +6,8 @@ $(function() {
   $('.card').on('click', function() {
     $(this).trigger('focus');
   })
+  
+  $('.card').on('focus', function() {
+    $(this).trigger('blur');
+  })
 });
