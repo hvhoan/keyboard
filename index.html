@@ -1,18 +1,21 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index</title>
+  <title>Document</title>
+  <script type="text/javascript">
+    //Print XML
+    function sendXml() {
+      location.href = 'tmprintassistant://tmprintassistant.epson.com/print?success=http%3A%2F%2Flocalhost%3A4200%2Fcomplete%3Fcode%3D200&ver=1&data-type=eposprintxml&data=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Cepos-print%20xmlns%3D%22http%3A%2F%2Fwww.epson-pos.com%2Fschemas%2F2011%2F03%2Fepos-print%22%3E%0A%3Ctext%20align%3D%22center%22%2F%3E%0A%3Cimage%20width%3D%22200%22%20height%3D%22200%22%20color%3D%22color_1%22%20mode%3D%22mono%22%20src%3Ddata%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAIQAAACECAYAAABRRIOnAAAGzUlEQVR4Xu2dzdbbMAgFk%2Fd%2F6HTTRS2fejwH5Djy7VaygMsAys%2BXvj%2Bfz%2BeVf1HgrwLvABEW%2FlUgQISHjQIBIkAEiDDwfwXSIUJHOkQYSIcIAycVyMg4KdRTtgWIp2T6ZJwB4qRQT9kWIJ6S6ZNxBoiTQj1lW4B4SqZPxhkgTgr1lG0B4imZPhlnGYj3%2B33SVM%2B28esbZN9%2B3YPOG6Og8%2B15VZXIHzo%2FQAwK2QRSAux5lDBaJ3%2Fo%2BQARIHo%2F3Pp2BZB9WzF0XkYG9JhRQJsAbGHDHaV6hyB%2FZwNxtT6k77jePjKuDpgSSADROglK8RKAdD6td58fIIYvnRNg1ZFBABEAu4qGDqrPq37ruptQGzAlkDoArZOglOBv60P%2BXz4yKGFUcSQonU8Jp3XyjwSv%2Bk%2F26XzyL0A0X1JJcEoYAR0gYKZXK7qaIBoR3SMvQASIw6ZDBWGBXW5k2JZNFUcVTvZswjIyQFErKCWIBKeKoucJsOqIqp5P%2BqRDDAoEiK0g09%2BYml1hVAFkP0AsBgS15G5grD3aT8BmZBRfZVDF20tj9U4TIJo%2FG7CCBojaDwL9%2FB2CgMnIIAUuvkM4d%2Fa7bcKr%2B8lfO0KsP2SfRp7tkJe%2F7LQBVgO2CZh9qbP%2BWL26z58%2BMmyAAcIpFiDgVxStQOkQk%2B8Qjm%2B%2Fu3uGE0Dd6z5i98Tt7hDOfb87QBxrFiDkF16%2BDZQvAfdEgAgQG2K%2BDoTj9%2Fu76RJpO8j3I%2Br1oPyys9ed%2BacFiGONA8SgTzpEdejML%2BpWC%2BkQkzsEvU6ndx5bs%2F16vYhv8peAsf5e7Q%2FZI%2F%2FLI4MEDhDHH0eTfhbQAAF3AAKS7gxUUbROCQoQk3%2BC6OoEBIhBASKcBOuuYKr46jrFUz2fgLZ6kb%2B78%2B72198EGM3U7oSQvVHQbvuUUNKLng8QxS%2FxksABovsHK%2BRnE7MrNB2CSgDWScDuGUn2CBgKl86njkD26Xz7vNW3fWTQJYcCsgmxCei2T%2BdRgrv9v90dIkBs33gKEPAylCoqHcL9NDR1mNuNDNsxCAgSwAJnWyztp45g%2FSP9SI8AMShIglCCqwmxgNN%2B8pfW6fzpl0oS1DpIFWEr0ApI%2B9MhZEatYJRgOi8d4uZ%2F7Ev8UIIJEOpIBAg9T%2F53r5O%2FpBc9T%2F5e%2Fn2IagIoYGrxKMjkT2PJvo3PFgzZDxDyZTMJWl0PELIirWC0v9qxqgDYCv%2B5kXF1gFWBqiOGgCD%2FqnpZ4NHf7u9DVAP89vPtAt%2BsAwaI5p8PIEGrI4iAnN7R0iG2nyVQQgIEKGBnJI0EOs%2B%2Bc0n2KMHWH9shCEDqCLRO8e38nd0hyCGbYLs%2FQFAGtuvt70M48%2Fu%2FtLIVSfsDhMtIgCiORNvyLaA0Emjd4fB6tQNRFYgEsx2h%2B7xqfNWRRwkm%2F%2Bj5ADH5fYJuICmhAYIUGtarFUqCUwer2qdwyT96Ph0iHWLDyHQgqGKIWGq59LrfViRVWHc8FJ%2B1R%2F6T3gECRgoBRwLbdQswAWXtB4gAkZFxVDXUcm0LtxX68x3CBty9374xY%2FeTv9Xz6HkCkAAm%2F3cjsfpZhjXYvZ8EpTtAVVBr3%2FoTICQxNiF2P7lTPY%2BeDxCUgWGdBLUVKc2%2FrH3rz88BQQ5bgWl%2F96Wr23%2Fyz66THlUg2%2B8Q3YKSACTo7Oer55P%2F9k4TICb%2Fv6CUcFq3Ca8mtPp8OkQRqAABCnQTWr10UYWO59N%2BauHV%2BO3zNKLJXwJ6%2BlvX5ACtk2B2PUAcKx4g5O9W2g5WBZ7sEeBkf%2FodotqySADb4m2LpY5j%2FaOEVO39HBCUEAqIBLPrVXsEBAFg16kAKB5rb%2FrICBA2Jdv9AULO9HSIY4AsjukQEsCMjOL7EFePDDtTyb%2FZLdt2OPKneqlfrkMEiJv%2FCh1VICXQVhCdZ1s%2BVaS1R%2FbJnl1%2F%2FB3CJoiApQRYewGi%2BIcw1CGoAqoJp5lszycgCLCqPdSr%2Bp1KShgFYAWgBHULTvYovu7nq%2FYCBHQoGgndCe0GlgqKANj5kw5x%2FB%2BgBAiJFI0Medxue%2FV8arHkXxUIW8Gz%2FaV4p78PQQ7QeoAghbbrBDCdFiBAIRLYVnT3ebYDBQj5stcKHCAGxawgRCit21cFVf9sRZN%2FBJwdkXY%2F6ds%2BMshgdZ0Ep3VrP0BIxaoVKM29KOG0XrVH7yNY%2B7S%2FCqSNNx2i%2BVJJCV5%2BZFgCs%2F%2FeCpQ7xL3Di3dWgQBhFVt8f4BYPME2vABhFVt8f4BYPME2vABhFVt8f4BYPME2vABhFVt8f4BYPME2vABhFVt8f4BYPME2vABhFVt8f4BYPME2vABhFVt8f4BYPME2vD8fvu78%2BmZAagAAAABJRU5ErkJggg%3D%3D%2F%3E%0A%3C%2Fepos-print%3E';
+    }
+  </script>
 </head>
+
 <body>
-  <input type="text" class="card-number" inputmode="none">
-  <input type="text" class="card-number" onfocus="blur();">
-  <input type="text" class="card-number" style="pointer-events:none">
-  <ion-input type="text" class="card-number">
-  <input type="text" class="card-number">
-    
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--   <script src="./js/main.js"></script> -->
+  <h1>Epson TM Print Assistant Sample Program</h1>
+  <p><button onclick="sendXml()">Print XML</button></p>
 </body>
+
 </html>
