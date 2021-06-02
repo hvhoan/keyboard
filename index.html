@@ -18,6 +18,7 @@
     var query_cut = 'cut';
     var xmlData = `
     <epos-print xmlns="http://www.epson-pos.com/schemas/2011/03/epos-print">
+      <text lang="ja"/>
       <feed line="2"/>
       <text align="center"/>
       <title dw="true" dh="true">予約内容 &#10;</text>
@@ -30,9 +31,10 @@
       <text>テスト０１４ &#10;</text>
       <feed line="1"/>
       <symbol type="qrcode_model_2" level="default" width="16" height="0" size="0">a1J1s000000IPE0EAO</symbol>
-      <text> &#10;</text>
       <feed line="1"/>
       <text>予約時刻になったらドッグラン入口の読取り機に、この画面を読取らせてください。ドアロックが解錠されます。 &#10;</text>
+      <feed line="2"/>
+      <cut type="feed"/>
     </epos-print>
     `
 
