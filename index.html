@@ -150,6 +150,10 @@
 
       location.href = urlData;
     }
+    
+    function sendXML3() {
+      location.href = 'tmprintassistant://tmprintassistant.epson.com/print?success=http%3A%2F%2F192.168.1.43%3A4200%2Fcomplete%3Fcode%3D200&ver=1&data-type=eposprintxml&data=%0A%3Cepos-print%20xmlns%3D%22http%3A%2F%2Fwww.epson-pos.com%2Fschemas%2F2011%2F03%2Fepos-print%22%3E%0A%20%20%3Ctext%20lang%3D%22ja%22%2F%3E%0A%20%20%3Cfeed%20line%3D%222%22%2F%3E%0A%20%20%3Ctext%20align%3D%22center%22%2F%3E%0A%20%20%3Ctext%20dw%3D%22true%22%20dh%3D%22true%22%3E%E4%BA%88%E7%B4%84%E5%86%85%E5%AE%B9%20%26%2310%3B%3C%2Ftext%3E%0A%20%20%3Ctext%20width%3D%221%22%20height%3D%221%22%2F%3E%0A%20%20%3Cfeed%20line%3D%221%22%2F%3E%0A%20%20%3Ctext%3E%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%EF%BC%9Adr-o0001752%20%26%2310%3B%3C%2Ftext%3E%0A%20%20%3Ctext%3E2021%2F06%2F03%20(%E6%9C%A8)%2017%3A00%20-%2018%3A00%20%26%2310%3B%3C%2Ftext%3E%0A%20%20%3Ctext%3E%E3%82%AB%E3%82%A4%E3%83%B3%E3%82%BA%E3%83%9B%E3%83%BC%E3%83%A0%E8%93%AE%E7%94%B0%20%26%2310%3B%3C%2Ftext%3E%0A%20%20%3Ctext%3E%E5%85%A8%E3%82%B5%E3%82%A4%E3%82%BA%E5%85%B1%E7%94%A8%E3%83%89%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3730%20%26%2310%3B%3C%2Ftext%3E%0A%20%20%3Ctext%3E%E3%83%86%E3%82%B9%E3%83%88%EF%BC%90%EF%BC%90%EF%BC%98%20%26%2310%3B%3C%2Ftext%3E%0A%20%20%3Cfeed%20line%3D%221%22%2F%3E%0A%20%20%3Csymbol%20type%3D%22qrcode_model_2%22%20level%3D%22default%22%20width%3D%2216%22%20height%3D%220%22%20size%3D%220%22%3E397185%3C%2Fsymbol%3E%0A%20%20%3Ctext%3E397185%20%26%2310%3B%3C%2Ftext%3E%0A%20%20%3Cfeed%20line%3D%221%22%2F%3E%0A%20%20%3Ctext%3E%E4%BA%88%E7%B4%84%E6%99%82%E5%88%BB%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E3%82%89%E3%83%89%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E5%85%A5%E5%8F%A3%E3%81%AE%E8%AA%AD%E5%8F%96%E3%82%8A%E6%A9%9F%E3%81%AB%E3%80%81%E3%81%93%E3%81%AE%E7%94%BB%E9%9D%A2%E3%82%92%E8%AA%AD%E5%8F%96%E3%82%89%E3%81%9B%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E3%83%89%E3%82%A2%E3%83%AD%E3%83%83%E3%82%AF%E3%81%8C%E8%A7%A3%E9%8C%A0%E3%81%95%E3%82%8C%E3%81%BE%E3%81%99%E3%80%82%20%26%2310%3B%3C%2Ftext%3E%0A%3C%2Fepos-print%3E%0A';
+    }
   </script>
 </head>
 
@@ -158,6 +162,7 @@
   <p><button onclick="sendXML()">Unregistered (06/02 16:25)</button></p>
   <p><button onclick="sendXML1()">First Reception (06/02 16:25)</button></p>
   <p><button onclick="sendXML2()">Complete Order (06/03 14:42)</button></p>
+  <p><button onclick="sendXML3()">Complete Order (06/03 14:52)</button></p>
 </body>
 
 </html>
